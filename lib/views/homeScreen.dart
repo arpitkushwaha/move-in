@@ -1,6 +1,8 @@
 import 'package:csc_picker/csc_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:move_in/utilities/constants.dart';
+import 'package:move_in/views/compareCitiesScreen.dart';
+import 'package:move_in/views/selectedCityScreen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -43,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           width: 8,
                         ),
                         Text(
-                          'Location',
+                          'Move In',
                           style: TextStyle(fontSize: 20),
                         )
                       ],
@@ -200,7 +202,8 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 5.0,
         onPressed: () {
 
-          Navigator.pushNamed(context, Constants.compareCitiesScreenRoute, arguments: cityStateMap);
+          //Navigator.pushNamed(context, Constants.compareCitiesScreenRoute, arguments: cityStateMap);
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> CompareCitiesScreen(cityStateMap: cityStateMap)));
 
         },
         padding: EdgeInsets.only(top: 12, left: 30, right: 30, bottom: 12),

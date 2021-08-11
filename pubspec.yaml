@@ -18,6 +18,9 @@ dependencies:
   path: ^1.8.0
   flutter_bloc: ^7.1.0
   csc_picker: ^0.1.0
+  http: ^0.12.1
+  google_maps_flutter: ^1.2.0
+  location: ^3.0.0
 
 dev_dependencies:
   flutter_test:

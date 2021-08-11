@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:move_in/utilities/db_manager.dart';
 import 'package:move_in/views/IntroScreen.dart';
+import 'package:move_in/views/compareCitiesScreen.dart';
 import 'package:move_in/views/homeScreen.dart';
 import 'package:move_in/views/loginScreen.dart';
 import 'package:move_in/views/selectAreaScreen.dart';
+import 'package:move_in/views/selectedCityScreen.dart';
 import 'package:move_in/views/signupScreen.dart';
 
 import 'utilities/constants.dart';
@@ -34,6 +36,8 @@ class _MyAppState extends State<MyApp> {
         Constants.loginRoute : (context) => LoginScreen(),
         Constants.signupRoute : (context) => SignupScreen(),
         Constants.homeScreenRoute : (context) => HomeScreen(),
+        Constants.compareCitiesScreenRoute : (context) => CompareCitiesScreen(),
+        Constants.selectedCityScreenRoute : (context) => SelectedCityScreen(),
       },
     );
   }

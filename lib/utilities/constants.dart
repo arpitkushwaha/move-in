@@ -10,7 +10,7 @@ class Constants{
   static const String loginRoute = "/login";
   static const String homeScreenRoute = "/homeScreen";
   static const String compareCitiesScreenRoute = "/compareCitiesScreen";
-
+  static const String selectedCityScreenRoute = "/selectedCityScreen";
 
   //Constants
   static final kHintTextStyle = TextStyle(
